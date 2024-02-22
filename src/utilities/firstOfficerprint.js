@@ -10,24 +10,6 @@ import {
 } from "@/utilities/convertCode.js";
 
 import formatPid from "@/utilities/formatPid";
-
-import pdfFonts from "@/assets/fonts/th-sarabun.js";
-pdfMake.vfs = pdfFonts;
-pdfMake.fonts = {
-  Roboto: {
-    normal: "THSarabun.woff",
-    bold: "THSarabunBold.woff",
-  },
-  THSarabun: {
-    normal: "THSarabun.woff",
-    bold: "THSarabunBold.woff",
-  },
-  THSarabunIT9: {
-    normal: "THSarabunIT9.woff",
-    bold: "THSarabunIT9Bold.woff",
-  },
-};
-
 export default function firstOfficerprint(filteredData, startEndDate) {
   const tableBody = [];
   const tableHeader = [
@@ -85,7 +67,7 @@ export default function firstOfficerprint(filteredData, startEndDate) {
       },
     ],
     defaultStyle: {
-      font: "Kanit",
+      font: "THSarabun",
       lineHeight: 1.4,
       fontSize: 10,
     },

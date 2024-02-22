@@ -20,6 +20,7 @@ const options = {
   cancelButtonText: "ยกเลิก",
 };
 
+import "./pdfmake-style.js";
 export function registerPlugins(app) {
   const pinia = createPinia();
 

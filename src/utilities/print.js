@@ -1,23 +1,5 @@
 import pdfMake from "pdfmake/build/pdfmake";
-// import { fonts } from "./customfont";
 import { formatDateString } from "../utilities/formatDate";
-
-import pdfFonts from "@/assets/fonts/th-sarabun.js";
-pdfMake.vfs = pdfFonts;
-pdfMake.fonts = {
-  Roboto: {
-    normal: "THSarabun.woff",
-    bold: "THSarabunBold.woff",
-  },
-  THSarabun: {
-    normal: "THSarabun.woff",
-    bold: "THSarabunBold.woff",
-  },
-  THSarabunIT9: {
-    normal: "THSarabunIT9.woff",
-    bold: "THSarabunIT9Bold.woff",
-  },
-};
 
 export default function print(
   bookingDetails,
@@ -65,7 +47,7 @@ export default function print(
     ],
 
     defaultStyle: {
-      font: "Kanit",
+      font: "THSarabun",
 
       lineHeight: 1.5,
     },
