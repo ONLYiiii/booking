@@ -1,5 +1,5 @@
 import pdfMake from "pdfmake/build/pdfmake";
-import { fonts } from "./customfont";
+// import { fonts } from "./customfont";
 import { formatDate } from "@/utilities/formatDate";
 
 import {
@@ -9,7 +9,22 @@ import {
 } from "@/utilities/convertCode.js";
 import formatPid from "@/utilities/formatPid";
 
-pdfMake.fonts = fonts;
+import pdfFonts from "@/assets/fonts/th-sarabun.js";
+pdfMake.vfs = pdfFonts;
+pdfMake.fonts = {
+  Roboto: {
+    normal: "THSarabun.woff",
+    bold: "THSarabunBold.woff",
+  },
+  THSarabun: {
+    normal: "THSarabun.woff",
+    bold: "THSarabunBold.woff",
+  },
+  THSarabunIT9: {
+    normal: "THSarabunIT9.woff",
+    bold: "THSarabunIT9Bold.woff",
+  },
+};
 
 export default function officerprint(filteredData, startEndDate) {
   const tableBody = [];
