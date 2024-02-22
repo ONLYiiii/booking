@@ -1,12 +1,12 @@
-import sarabunRegular from "./assets/fonts/Sarabun-Regular.ttf";
-import sarabunBold from "./assets/fonts/Sarabun-Bold.ttf";
-import sarabunItalic from "./assets/fonts/Sarabun-Italic.ttf";
-import sarabunBoldItalic from "./assets/fonts/Sarabun-BoldItalic.ttf";
+import sarabunRegular from "@/assets/fonts/Sarabun-Regular.ttf";
+import sarabunBold from "@/assets/fonts/Sarabun-Bold.ttf";
+import sarabunItalic from "@/assets/fonts/Sarabun-Italic.ttf";
+import sarabunBoldItalic from "@/assets/fonts/Sarabun-BoldItalic.ttf";
 
-import kanitRegular from "./assets/fonts/Kanit-Regular.ttf";
-import kanitBold from "./assets/fonts/Kanit-Bold.ttf";
-import kanitItalic from "./assets/fonts/Kanit-Italic.ttf";
-import kanitBoldItalic from "./assets/fonts/Kanit-BoldItalic.ttf";
+import kanitRegular from "@/assets/fonts/Kanit-Regular.ttf";
+import kanitBold from "@/assets/fonts/Kanit-Bold.ttf";
+import kanitItalic from "@/assets/fonts/Kanit-Italic.ttf";
+import kanitBoldItalic from "@/assets/fonts/Kanit-BoldItalic.ttf";
 
 export const fonts = {
   // Sarabun: {
@@ -21,16 +21,17 @@ export const fonts = {
   //   italics: `${window.location.origin}/${kanitItalic}`,
   //   bolditalics: `${window.location.origin}/${kanitBoldItalic}`,
   // },
+
   Sarabun: {
-    normal: `/${sarabunRegular}`,
-    bold: `/${sarabunBold}`,
-    italics: `/${sarabunItalic}`,
-    bolditalics: `/${sarabunBoldItalic}`,
+    normal: `${sarabunRegular}`,
+    bold: `${sarabunBold}`,
+    italics: `${sarabunItalic}`,
+    bolditalics: `${sarabunBoldItalic}`,
   },
   Kanit: {
-    normal: `/${kanitRegular}`,
-    bold: `/${kanitBold}`,
-    italics: `/${kanitItalic}`,
-    bolditalics: `/${kanitBoldItalic}`,
+    normal: `${kanitRegular}`,
+    bold: `${kanitBold}`,
+    italics: `${kanitItalic}`,
+    bolditalics: `${kanitBoldItalic}`,
   },
 };
