@@ -36,7 +36,6 @@ export default defineConfig({
         target: "https://iservice.dopa.go.th",
         changeOrigin: true,
         secure: false,
-        ws: true,
       },
     },
   },
